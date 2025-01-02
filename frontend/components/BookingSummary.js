@@ -6,7 +6,7 @@ export default function BookingSummary() {
   useEffect(() => {
     async function fetchBookings() {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/bookings`
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings`
       );
       const data = await response.json();
       setBookings(data);

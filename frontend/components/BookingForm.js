@@ -16,7 +16,7 @@ export default function BookingForm() {
   const fetchAvailableSlots = async (date) => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/bookings/availability?date=${date}`
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings/availability?date=${date}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch available slots");
@@ -42,7 +42,7 @@ export default function BookingForm() {
 
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/bookings`,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
