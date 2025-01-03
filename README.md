@@ -1,4 +1,4 @@
 ## Frontend Deployment
 
-<[Frontend](https://restaurant-table-booking-frontend.vercel.app/)>
+[Frontend Vercel](https://restaurant-table-booking-frontend.vercel.app/)
 
